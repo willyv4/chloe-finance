@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <body> 
+    <div class="header">
+        <h1>Life Spent Well</h1>
+      <div class="Navbar"> 
+        <a class="active" href="#Home">Home</a>
+        <a href="#Auto">Auto</a>
+        <a href="#Food">Food</a>
+        <a href="#Abode">Abode</a>
+        <a href="#Relationship">Relationships</a>
+        <a href="#Clothing">Clothing</a>
+        <a href="#Budget"> Budget</a>
+     </div>
+    </div>
+    <div class="aboutme">
+      <div class="aboutme1">
+        <img src="image_6487327.JPG" alt="chloe" class="img1">
+        <p>Hello, my name is Chloe and I am the creator of life well spent. I am a wife to an incredible husband, full time student and lover of managing money. Come along with me to live a life well spent that we can control & afford. </p> 
+      </div>
+    </div> 
+    <div class="intro">
+      <p>If you're the type of person who gets their paycheck and spends it all without having any leftovers, then this is the place for you. 
+        Let me help you learn your why and what we CAN do to control our money instead of letting our money control us. 
+        Now don't feel discouraged because we've all been there, you're not the only one.</p> 
+        <p>That is why I am here.</p> 
+        <p>Now we are all different...</p>
+        <p>we have different incomes</p>
+        <p>we have different size of families</p>
+        <p>we have different wants</p>
+        <p>we have different needs</p>
+        <p>we have different lifestyles</p>
+        <p>We have different environments</p>
+        <p>but the one thing we do have in common... we want to live a life well spent. 
+        that is why I want to make it unique and customizable for YOU.</p>
+    </div>
+
+        <div class="textslide-container">
+          <div class="text-fade">
+            <div class="slide-text">"Money is a terrible master but an excellent servant." - P.J. Barnum</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"Financial freedom is available to those who learn about it and work for it." -Robert Kiyosaki</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"Beware of little expenses; a small leak will sink a great ship." -Benjamin Franklin</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"Just because you can afford it doesn't mean you should buy it." -Suze Orman</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"You must gain control over your money or the lack of it will forever control you." -Dave Ramsey</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"A budget is telling your money where to go instead of wondering where it went." -Dave Ramsey</div>
+          </div>
+          <div class="text-fade">
+            <div class="slide-text">"Don't think of saving money as a punishment. Think of saving money as a lifestyle change and a means to freedom" -Emily G. Stroud</div>
+          </div>
+        </div>
+        
+        <div class="textslide-container2">
+          <div class="text-fade2">
+            <div class="slide-text2">60% of millennials bringing in over $100,000 claim to be living paycheck to paycheck.</div>
+          </div>
+          <div class="text-fade2">
+            <div class="slide-text2">54% of all Americans, nearly 125 million people, are living paycheck to paycheck, regardless of age and income.</div>
+          </div>
+          <div class="text-fade2">
+            <div class="slide-text2">The average household spends 56% of their food budget on groceries and 44% on dining out</div>
+          </div>
+          <div class="text-fade2">
+            <div class="slide-text2">As 2021 comes to a close, the total outstanding auto loan debt totals $1.44 trillion ($1,443,000,000,000)</div>
+          </div>
+          <div class="text-fade2">
+            <div class="slide-text2">77.6% of borrowers owe $40,000 or less in defaulted student loans.</div>
+          </div>
+          <div class="text-fade2">
+            <div class="slide-text2">30% of Americans 45 and over have no retirement savings or pension</div>
+          </div>
+        </div>
+
+<script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("text-fade");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("text-fade");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 6000); // Change image every 2 seconds
+      }
+    </script>  
+       <content>
+        <link rel="stylesheet" href="index.css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"></link>
+       </content>   
+  </body>
+</html>

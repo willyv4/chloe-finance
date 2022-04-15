@@ -1,0 +1,126 @@
+* {
+    font-family: Julius Sans One, Amatic SC, cursive;
+}
+
+content {
+    text-align: center;
+}
+
+.Navbar {
+    background-color: rgb(122, 143, 162);
+    overflow: hidden;
+  }
+ 
+.Navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.Navbar a:hover {
+    background-color: rgba(255, 249, 228, 0.813);
+    color: black;
+  }
+  
+.Navbar a.active {
+    background-color: #9ab3aa;
+    color: white;
+  }
+
+.header {
+  background-color: rgb(255, 245, 233);
+  text-align: center;
+  width: 100%;
+  font-size: large;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  }
+
+.aboutme1 {
+    background-color: rgb(252, 250, 243);
+    width: 300px;
+    padding: 10px;
+    line-height: 2.0;
+    margin-top: 200px;
+    position: static;
+    font-size: smaller;
+   }
+
+.intro {
+  position: relative;
+  left: 310px;
+  top: 0;
+  width: 500px;
+  line-height: 2.0;
+  margin-top:  -550px;
+  margin-bottom: -4000px;
+  font-size: smaller;
+}
+
+.img1 {
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    display: block;
+    left: -200px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+html, body {
+  background-color: rgb(252, 250, 243);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  text-align: center;
+  color:  #9ab3aa;
+  font-size: x-large;
+}
+
+
+* {box-sizing:border-box}
+
+.textslide-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 850px;
+  top: 250px;
+}
+
+.textslide-container2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 850px;
+  top: 350px;
+}
+
+.text-fade2 {
+  display: block;
+}
+
+.text-fade {
+  display: block;
+}
+
+.slide-text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(86, 113, 137);
+  border-radius: 5px;
+}
+
