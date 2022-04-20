@@ -13,9 +13,11 @@
         <a href="#Budget"> Budget</a>
      </div>
     </div>
-    <div class="aboutme">
-      <div class="aboutme1">
+    <div>
+      <div class="img1">
         <img src="image_6487327.JPG" alt="chloe" class="img1">
+      </div>
+      <div class="aboutme">
         <p>Hello, my name is Chloe and I am the creator of life well spent. I am a wife to an incredible husband, full time student and lover of managing money. Come along with me to live a life well spent that we can control & afford. </p> 
       </div>
     </div> 
@@ -60,22 +62,22 @@
         </div>
         
         <div class="textslide-container2">
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">60% of millennials bringing in over $100,000 claim to be living paycheck to paycheck.</div>
           </div>
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">54% of all Americans, nearly 125 million people, are living paycheck to paycheck, regardless of age and income.</div>
           </div>
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">The average household spends 56% of their food budget on groceries and 44% on dining out</div>
           </div>
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">As 2021 comes to a close, the total outstanding auto loan debt totals $1.44 trillion ($1,443,000,000,000)</div>
           </div>
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">77.6% of borrowers owe $40,000 or less in defaulted student loans.</div>
           </div>
-          <div class="text-fade2">
+          <div class="text-fade">
             <div class="slide-text2">30% of Americans 45 and over have no retirement savings or pension</div>
           </div>
         </div>
@@ -103,7 +105,7 @@
         slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", " ");
       }
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
@@ -120,6 +122,7 @@
       slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 6000); // Change image every 2 seconds
       }
+    
     </script>  
        <content>
         <link rel="stylesheet" href="index.css"></link>
