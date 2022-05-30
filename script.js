@@ -33,24 +33,18 @@ let iconImage2 = document.getElementById("image2");
 let iconImage3 = document.getElementById("image3");
 let iconImage4 = document.getElementById("image4");
 
-let homePath = "pexels-felix-lauster-987550.jpg";
-let carPath = "pexels-lorenzo-messina-6191762.jpg";
-let workPath = "pexels-lukas-590016.jpg";
-let educationPath = "pexels-rapheal-brasileiro-2460817.jpg";
-
 iconImage1.onclick = () => {
-  iconImage1.src = homePath;
+  iconImage1.src = document.getElementById("img1").style.visibility = "visible";
 }
 
 iconImage2.onclick = () => {
-  iconImage2.src = carPath;
+  iconImage2.src = document.getElementById("img2").style.visibility = "visible";
 }
 
 iconImage3.onclick = () => {
-  iconImage3.src = workPath;
+  iconImage3.src = document.getElementById("img3").style.visibility = "visible";
 }
 
 iconImage4.onclick = () => {
-  iconImage4.src = educationPath;
+  iconImage4.src = document.getElementById("img4").style.visibility = "visible";
 }
-
