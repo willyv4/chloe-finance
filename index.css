@@ -185,3 +185,59 @@ html, body {
   border: 5px solid #fcaf38;
   border-radius: 100%;
 }
+
+#img1 {
+  visibility: hidden;
+  width: 350px;
+  height: 375px;
+  margin: 50px;
+  cursor: pointer;
+  display: inline-table;
+  top: -1150px;
+  left: 825px;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+#img2 {
+  visibility: hidden;
+  width: 350px;
+  height: 375px;
+  margin: 50px;
+  cursor: pointer;
+  display: inline-table;
+  top: -1150px;
+  left: 350px;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+#img3 {
+  visibility: hidden;
+  width: 350px;
+  height: 375px;
+  margin: 50px;
+  cursor: pointer;
+  display: inline-table;
+  top: -1625px;
+  left: 825px;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+#img4 {
+  visibility: hidden;
+  width: 350px;
+  height: 375px;
+  margin: 50px;
+  cursor: pointer;
+  display: inline-table;
+  top: -1625px;
+  left: 350px;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px; 
+}
