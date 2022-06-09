@@ -5,7 +5,6 @@
 html,body {
   margin:0;
   padding:0;
-  overflow-x:hidden;
   }
 
 content {
@@ -40,50 +39,65 @@ content {
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: x-large;
-  position: fixed;
   width: 100%;
   z-index: 100;
   color:rgb(0, 0, 0);
   }
 
-.aboutme {
-  width: 275px;
-  height: 175px;
-  line-height: 1.5;
+  header h1 {
+    margin: 0;
+    padding: 24px;
+  }
+
+main{
+  display:flex;
+  flex-direction: row;
+  width:100vw;
+}
+
+main .img-about {
+  /* flex:1; */
   position: relative;
-  font-size: small;
-  margin-left: 20px;
-  background-color: #ffffff;
-  text-align: center;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  z-index: 0;
+  width:275px;
+  margin-left: 10px;
 }
 
 .aboutmetext {
+  background-color: #ffffff;
+  height: 125px;
+  font-size: small;
+  margin-top: 0px;
+  padding-top: 15px;
   text-align: center;
-  top: 20px;
-  position: relative;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: #000000 solid 1px;
 }
 
 .intro {
-  position: relative;
-  left: 320px;
-  top: -220px;
-  width: 450px;
+  flex:1;
   line-height: 1.5;
-  margin-top: -253px;
-  margin-bottom: 0;
   font-size: small;
+  padding-left: 20px;
+}
+
+main .row {
+  width: 100px
+}
+
+header .Navbar{
+  position: relative;
+  z-index: 100000;
 }
 
 .img1 {
-  height: 325px;
-  width: 275px;
-  margin-left: 10px;
-  margin-top: 90px;
-  margin-bottom: 55px;
+  width: 272px;
+  margin-top: 10px;
+  margin-right: 10px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border: #000000 solid .5px;
 }
 
 html, body {
@@ -152,9 +166,6 @@ html, body {
 
 .row {
   display: inline-table;
-  top: -650px;
-  left: 825px;
-  position: relative;
 }
 
 .image1,
@@ -186,58 +197,50 @@ html, body {
   border-radius: 100%;
 }
 
-#img1 {
+
+.ICON-SLIDES {
   visibility: hidden;
-  width: 350px;
-  height: 375px;
-  margin: 50px;
-  cursor: pointer;
-  display: inline-table;
-  top: -1150px;
-  left: 825px;
   position: relative;
+  max-width: 300px;
+  top: -500px;
+  left: 950px;
+}
+
+#education1{
+  height: 300px;
+  width: 250px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-#img2 {
-  visibility: hidden;
-  width: 350px;
-  height: 375px;
-  margin: 50px;
+.prev, .next {
   cursor: pointer;
-  display: inline-table;
-  top: -1150px;
-  left: 350px;
   position: relative;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#img3 {
-  visibility: hidden;
-  width: 350px;
-  height: 375px;
-  margin: 50px;
-  cursor: pointer;
-  display: inline-table;
-  top: -1625px;
-  left: 825px;
-  position: relative;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+.next {
+  right: -200px;
+  border-radius: 3px 0 0 3px;
+  
 }
 
-#img4 {
-  visibility: hidden;
-  width: 350px;
-  height: 375px;
-  margin: 50px;
-  cursor: pointer;
-  display: inline-table;
-  top: -1625px;
-  left: 350px;
-  position: relative;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px; 
+.prev:hover, .next:hover {
+  background-color: rgba(51, 51, 51, 0.607);
+}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
