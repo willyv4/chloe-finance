@@ -1,21 +1,6 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("text-fade");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", " ");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("text-fade");
@@ -29,22 +14,32 @@ function showSlides() {
   }
 
 let iconImage1 = document.getElementById("image1");
-let iconImage2 = document.getElementById("image2");
-let iconImage3 = document.getElementById("image3");
-let iconImage4 = document.getElementById("image4");
 
 iconImage1.onclick = () => {
-  iconImage1.src = document.getElementById("img1").style.visibility = "visible";
+  iconImage1.src = document.getElementById("img").style.visibility = "visible";
 }
 
-iconImage2.onclick = () => {
-  iconImage2.src = document.getElementById("img2").style.visibility = "visible";
+let slideLength = 1;
+revealSlides(slideLength);
+
+// Next/previous controls
+function plusSlides(n) {
+  revealSlides(slideLength += n);
 }
 
-iconImage3.onclick = () => {
-  iconImage3.src = document.getElementById("img3").style.visibility = "visible";
+// Thumbnail image controls
+function currentSlides(n) {
+  revealSlides(slideLength = n);
 }
 
-iconImage4.onclick = () => {
-  iconImage4.src = document.getElementById("img4").style.visibility = "visible";
+function revealSlides(n){
+  let r;
+  let slides = document.getElementsByClassName("fade-slide");
+  if (n > slides.length) {slideLength = 1}
+  if (n < 1) {revealSlides = slides.length}
+  for (r = 0; r < slides.length; r++) {
+    slides[r].style.display = "none";
+  }
+  slides[slideLength-1].style.display = "block";
 }
+
