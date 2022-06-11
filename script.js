@@ -14,6 +14,7 @@ function showSlides() {
   }
 
 let iconImage1 = document.getElementById("image1");
+let exitButton = document.getElementById("exit-button");
 
 iconImage1.onclick = () => {
   iconImage1.src = document.getElementById("img").style.visibility = "visible";
@@ -24,6 +25,10 @@ revealSlides(slideLength);
 
 // Next/previous controls
 function plusSlides(n) {
+  revealSlides(slideLength -= n);
+}
+
+function minusSlides(n) {
   revealSlides(slideLength += n);
 }
 
@@ -40,6 +45,8 @@ function revealSlides(n){
   for (r = 0; r < slides.length; r++) {
     slides[r].style.display = "none";
   }
-  slides[slideLength-1].style.display = "block";
+  slides[slideLength-1].style.display = "inline-block";
+  // exitButton = () => {
+  //   exitButton.onclick = document.getElementById("img").style.visibility = "hidden";
+  // }
 }
-
