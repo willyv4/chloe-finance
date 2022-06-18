@@ -75,17 +75,32 @@
         that is why I want to make it unique and customizable for YOU.</p>
       </div>
     </div>
-    <div class="row">
-      <div class="column">
-        <img src="istockphoto-1254374165-612x612.jpg" id="image1" class="image1" onmouseover="magnifyImage()">
-        <img src="istockphoto-1263867224-612x612.jpg"  id="image2" class="image2"  onmouseover="magnifyImage()">
+    <div id="header1">
+        <h4>Click to see our experience</h4>
+      <div class="row">
+        <div class="column">
+        <div id="image1">
+          <p>Education</p>
+          <img src="istockphoto-1254374165-612x612.jpg" class="image1" alt="EDUCATION">
+        </div>
+        <div id="image2">
+          <p>Vehicles</p>
+          <img src="istockphoto-1263867224-612x612.jpg" class="image2"  onmouseover="magnifyImage()">
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="columb">
-        <img src="istockphoto-867290418-612x612-1.jpg" id="image3" class="image3" onmouseover="magnifyImage()">
-        <img src="istockphoto-952981140-612x612.jpg" id="image4" class="image4" onmouseover="magnifyImage()">
+    <div class="columb">
+      <div id="image3">
+        <p>Work</p>
+        <img src="istockphoto-867290418-612x612-1.jpg" class="image3" onmouseover="magnifyImage()">
+       </div>
+       <div id="image4">
+         <p>Home</p>
+         <img src="istockphoto-952981140-612x612.jpg" class="image4" onmouseover="magnifyImage()">
+       </div>
       </div>
+    </div>
     </div>
   </main>
     
@@ -133,8 +148,7 @@
         <div class="slide-text">30% of Americans 45 and over have no retirement savings or pension</div>
       </div>
     </footer>
-
-
+</main>
 
         <!-- ICONSLIDES-->
 <div class="ICON-SLIDES" onclick="revealSlides()" id="img">
@@ -143,31 +157,152 @@
       <span >X</span>
     </button>
 
-    <!-- Full-width images with number and caption text -->
+    <!-- Slides for slide show one-->
     <div class="fade-slide">
       <div class="numbertext" >1 / 3</div>
       <img src="image_6483441 (2).JPG" id="education1">
-      <div class="text">Caption Text</div>
+      <div class="text">
+        <div class="words">Never pulled loans for college</div>
+      </div>
     </div>
   
     <div class="fade-slide">
       <div class="numbertext">2 / 3</div>
       <img src="image_6483441 (3).JPG" id="education1">
-      <div class="text">Caption Two</div>
+      <div class="text">
+        <div class="words">Paid every semester in full</div>
+      </div>
     </div>
   
     <div class="fade-slide">
       <div class="numbertext">3 / 3</div>
       <img src="pexels-raphael-brasileiro-2460817.jpg" id="education1">
-      <div class="text">Caption Three</div>
+      <div class="text">
+        <div class="words">used recources such as applying for student aid</div>
+      </div>
     </div>
   
     <!-- Next and previous buttons -->
    <div> 
-    <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a id="next" onclick="minusSlides(1)">&#10095;</a>
+    <a id="prev" onclick="plusSlides1(-1)">&#10094;</a>
+    <a id="next" onclick="minusSlides1(1)">&#10095;</a>
   </div>
   </div>
+
+  <div class="ICON-SLIDES2" onclick="revealSlides2()" id="img2">
+
+    <button id="close" class="close-button" onclick="document.location='finance.html'">
+      <span >X</span>
+    </button>
+
+    <!-- Slides for slide show one-->
+    <div class="fade-slide2">
+      <div class="numbertext" >1 / 3</div>
+      <img src="image_6483441 (7).JPG" id="education1">
+      <div class="text">
+      <div class="words">Paid for first vehicle in cash</div>
+    </div>
+    </div>
+  
+    <div class="fade-slide2">
+      <div class="numbertext">2 / 3</div>
+      <img src="image_6483441 (8).JPG" id="education1">
+      <div class="text">
+      <div class="words">kept good driving records to lower insurence</div>
+      </div>
+    </div>
+  
+    <div class="fade-slide2">
+      <div class="numbertext">3 / 3</div>
+      <img src="pexels-lorenzo-messina-6191762.jpg" id="education1">
+      <div class="text">
+      <div class="words">Called to lower car insurance frequently</div>
+      </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+   <div> 
+    <a id="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a id="next" onclick="minusSlides2(1)">&#10095;</a>
+  </div>
+  </div>
+
+  <div class="ICON-SLIDES3" onclick="revealSlides3()" id="img3">
+
+    <button id="close" class="close-button" onclick="document.location='finance.html'">
+      <span >X</span>
+    </button>
+
+    <!-- Slides for slide show one-->
+    <div class="fade-slide3">
+      <div class="numbertext" >1 / 3</div>
+      <img src="image_6483441.JPG" id="education1">
+      <div class="text">
+        <div class="words">Started jobs at a young age</div>
+      </div>
+    </div>
+  
+    <div class="fade-slide3">
+      <div class="numbertext">2 / 3</div>
+      <img src="image_6483441 (1).JPG" id="education1">
+      <div class="text">
+        <div class="words">Worked our way up in companies</div>
+      </div>
+    </div>
+  
+    <div class="fade-slide3">
+      <div class="numbertext">3 / 3</div>
+      <img src="pexels-lukas-590016.jpg" id="education1">
+      <div class="text">
+        <div class="words">Started small side bussiness</div>
+      </div>
+    </div>
+
+     <!-- Next and previous buttons -->
+    <div> 
+      <a id="prev" onclick="plusSlides3(-1)">&#10094;</a>
+      <a id="next" onclick="minusSlides3(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+    <div class="ICON-SLIDES4" onclick="revealSlides4()" id="img4">
+
+        <button id="close" class="close-button" onclick="document.location='finance.html'">
+          <span >X</span>
+        </button>
+    
+        <!-- Slides for slide show one-->
+        <div class="fade-slide4">
+          <div class="numbertext" >1 / 3</div>
+          <img src="image_6483441 (4).JPG" id="education1">
+          <div class="text">
+            <div class="words">Bought first home at the age of 22</div>
+          </div>
+        </div>
+      
+        <div class="fade-slide4">
+          <div class="numbertext">2 / 3</div>
+          <img src="image_6483441 (5).JPG" id="education1">
+          <div class="text">
+            <div class="words">Got approved for hoke loan and built an excellent credit score</div>
+          </div>
+        </div>
+      
+        <div class="fade-slide4">
+          <div class="numbertext">3 / 3</div>
+          <img src="image_6483441 (6).JPG"id="education1">
+          <div class="text">
+            <div class="words">Saved plenty for a down payment</div>
+          </div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+       <div> 
+        <a id="prev" onclick="plusSlides4(-1)">&#10094;</a>
+        <a id="next" onclick="minusSlides4(1)">&#10095;</a>
+      </div>
+      </div>
 
     <script type="text/javascript" src="script.js"></script>  
   </body>
