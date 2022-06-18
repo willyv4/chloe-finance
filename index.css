@@ -2,10 +2,12 @@
     font-family: Julius Sans One, Amatic SC, cursive;
 }
 
-html,body {
-  margin:0;
-  padding:0;
-  }
+html, body {
+  background-color: rgb(252, 250, 243);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 content {
     text-align: center;
@@ -39,9 +41,10 @@ content {
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: x-large;
-  width: 100%;
-  z-index: 100;
+  width: auto;
   color:rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
   }
 
   header h1 {
@@ -75,13 +78,28 @@ main .img-about {
   border: #000000 solid 1px;
 }
 
+.aboutmetext:hover {
+  border-radius: 50px;
+  height: 494px;
+  font-size: x-large;
+  line-height: 1.5; 
+  top: -369px;
+  position: relative;
+  padding: 10px;
+}
+
 .intro {
   flex:1;
   line-height: 1.5;
-  font-size: small;
+  font-size: 14.2px;
   padding-left: 20px;
+  text-align: center;
 }
 
+h5{
+  margin:0;
+  padding: 0;
+}
 main .row {
   width: 100px
 }
@@ -100,14 +118,6 @@ header .Navbar{
   border: #000000 solid .5px;
 }
 
-html, body {
-  background-color: rgb(252, 250, 243);
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .textslide-container, .textslide-container2 {box-sizing:border-box}
 
 .text-fade {
@@ -124,6 +134,11 @@ html, body {
   position: fixed;
   bottom: 0;
   z-index: 100;
+}
+
+.slide-text {
+  animation-name: fade;
+  animation-duration: 2.0s;
 }
 
 .rec1 {
@@ -173,16 +188,27 @@ html, body {
 .image4 {
   width: 100px;
   height: 100px;
-  margin: 50px;
+  margin: 70px;
   cursor: pointer;
 }
 
-.image1:hover {
-  width: 102.5px;
-  height: 102.5px;
-  transition: 0.7 ease;
-  background-image: rgba(192, 192, 192, 0.736);
+
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover {
+  transition: 0.5s ease;
+  margin: 60px;
+  opacity: 70%;
+  border: 7px solid #000000;
+  cursor: pointer;
 }
+
+.image1:hover, 
+.image3:hover {
+  margin-bottom: 76px;
+}
+
 
 .image1 {
   border: 5px solid #674a40;
@@ -203,19 +229,86 @@ html, body {
   border-radius: 100%;
 }
 
+#image1 p,
+#image2 p,
+#image3 p,
+#image4 p{
+  margin: 0px;
+  margin-bottom: -35px;
+}
+
+.fade-slide,
+.fade-slide2,
+.fade-slide3,
+.fade-slide4 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from{opacity: .6;}
+  to{opacity: 1;}
+}
+
+#header1 {
+  background-color: rgb(252, 250, 243);
+  text-align: center;
+  color:rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  }
 
 .ICON-SLIDES {
   visibility: hidden;
   position: relative;
   max-width: 300px;
-  top: -540px;
-  left: 865px;
+  top: -500px;
+  left: 830px;
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+.ICON-SLIDES2 {
+  visibility: hidden;
+  position: relative;
+  max-width: 300px;
+  top: -1070px;
+  left: 830px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.ICON-SLIDES3 {
+  visibility: hidden;
+  position: relative;
+  max-width: 300px;
+  top: -1650px;
+  left: 830px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.ICON-SLIDES4 {
+  visibility: hidden;
+  position: relative;
+  max-width: 300px;
+  top: -2220px;
+  left: 830px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#education1 {
+  box-sizing: content-box;
+  box-shadow: 0px 9px 30px 0px;
 }
 
 #education1{
-  height: 375px;
+  height: 425px;
   width: 400px;
   border-radius: 50px;
   border: 1px solid black;
@@ -224,53 +317,142 @@ html, body {
 #prev, #next {
   cursor: pointer;
   position: relative;
-  padding: 14.5px;
-  background-color: rgba(64, 64, 64, 0.463);
+  padding: 2.5px 80px;
+  margin: -70px;
+  background-color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 24px;
   transition: 0.9s ease;
   border-radius: 3px 3px 3px 3px;
   user-select: none;
+  top: -90px;
+  right: -95px;
+  border: 1px solid black;
 }
 
-#next {
-  right: -315px;
-  border-radius: 3px 0 0 3px;
+#next { 
+  border-radius: 3px 3px 3px 3px;
+  margin-left: -60px;
+}
+
+#prev {
+  margin-right: 60px;
 }
 
 #prev:hover, #next:hover {
-  background-color: rgba(31, 31, 31, 0.843);
+  background-color: #50a3a4ca;
+  transition: .7s ease-out;
 }
 
 .text {
-  background-color: #ffffffe5;
+  background-color: #ffffffc7;
   color: #000000;
-  font-size: 15px;
-  position: absolute;
-  width: 401.5px;
-  height: 75px;
+  font-size: 25px;
+  position: relative;
+  width: 400px;
+  height: 100px;
   text-align: center;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  bottom: 30px;
+  bottom: 105px;
+  border: 1px solid #000000;
+}
+
+.words {
+  position: relative;
+  top: 20px;
 }
 
 .close-button {
   float: right; 
   position: absolute;
-  top: 18px;
-  right: -102px;
-  font-style: bold;
-  background-color: #ffffff;
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  border-top-right-radius: 50%;
+  top: 35px;
+  right: -75px;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  color:rgb(0, 0, 0);
+  border: 5px solid #fcaf38;
+  border-radius: 100%;
   cursor: pointer;
+  background-color: rgb(252, 250, 243);
+  text-align: center;
   opacity: 50%;
-}
+  }
 
 .close-button:hover {
-  background-color: #f95335; 
+  opacity: 75%;
+  border: 7px solid #fcaf38;
   transition: 1s ease;
+  font-size: x-large;
+  background-color: #fbfbfbd2;
+}
+
+#willphoto {
+  position: sticky;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  margin-bottom: 100px;
+  display: block;
+  border-radius: 100%;
+  right: 20px;
+  box-sizing: border-box;
+  box-shadow: #000000 0px 50px 200px 25px;
+  z-index: 1;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background-color:rgb(255, 255, 255);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#footerdiv1,
+#footerdiv2,
+#footerdiv3 {
+  margin-left: 240px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#links {
+  text-decoration: none;
+  color:#000000
+}
+
+#footerdiv1:hover,
+#footerdiv2:hover,
+#footerdiv3:hover {
+  background-color: #50a3a4;
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.mystory {
+  width: 50%;
+  padding: 20px 10px 10px 20px;
+  margin: 30px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  z-index: 2;
+  line-height: 1.5;
+  font-size: 22px;
 }
